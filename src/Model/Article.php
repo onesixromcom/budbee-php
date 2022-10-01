@@ -68,7 +68,7 @@ class Article implements JsonSerializable
      */
     public $taxRate;
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
     	return array(
     		'name' => $this->name,

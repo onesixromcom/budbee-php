@@ -40,7 +40,7 @@ class EDI implements JsonSerializable
      */
     public $message;
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
     	return array(
     		'format' => $this->format,

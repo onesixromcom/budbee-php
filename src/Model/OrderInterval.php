@@ -46,7 +46,7 @@ class OrderInterval implements JsonSerializable
     	$this->delivery = $delivery;
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
     	return array(
     		'collection' => $this->collection,

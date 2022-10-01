@@ -74,7 +74,7 @@ class CollectionPoint implements JsonSerializable
 	 */
 	public $additionalInfo;
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		return array(
 			'street' => $this->street,

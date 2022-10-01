@@ -47,7 +47,7 @@ class Cart implements JsonSerializable
      */
     public $dimensions;
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
     	return array(
     		'cartId' => $this->cartId,

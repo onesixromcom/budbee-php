@@ -57,7 +57,7 @@ class Address implements JsonSerializable
      */
     public $country;
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
     	return array(
     		'street' => $this->street,

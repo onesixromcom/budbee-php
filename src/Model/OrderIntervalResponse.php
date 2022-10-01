@@ -47,7 +47,7 @@ class OrderIntervalResponse implements JsonSerializable
 	 */
 	public $collectionPointIds;
 
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		return array(
 			'collection' => $this->collection,

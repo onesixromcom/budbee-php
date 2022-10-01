@@ -54,7 +54,7 @@ class Dimensions implements JsonSerializable
      */
     public $weight;
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
     	return array(
     		'width' => $this->width,

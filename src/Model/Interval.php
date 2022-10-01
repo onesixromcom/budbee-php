@@ -40,7 +40,7 @@ class Interval implements JsonSerializable
      */
     public $stop;
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
     	return array(
     		'start' => $this->start->format('U') * 1000,

@@ -40,7 +40,7 @@ class GenericResponse implements JsonSerializable
      */
     public $message;
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
     	return array(
     		'status' => $this->status,

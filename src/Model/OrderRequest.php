@@ -61,7 +61,7 @@ class OrderRequest implements JsonSerializable
      */
     public $delivery;
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
     	return array(
     		'interval' => $this->interval,
